@@ -37,10 +37,9 @@ public class ViSelectionAction extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter printWriter = response.getWriter();
         printWriter.println ("<HTML>");
-        printWriter.println("<HEAD><link rel=\"stylesheet\" href=\"./src/main/webapp/style.css\"></HEAD>");
-        printWriter.println ("<BODY>");
-        printWriter.println ("<H1>Marques de Vi suggerides</H1>");
-        printWriter.println("<div>");
+        printWriter.println ("<body style=\"background-image: url('resources/vi.png');\">");
+        printWriter.println ("<h1 align=\"center\">Marques de Vi suggerides</h1>");
+        printWriter.println("<div style=\"margin: auto; width: 60%; border: 3px solid #FF9171; padding: 10px; background-color: #e1eda6;\">");
         printWriter.println ("<p>Llista de marques de vins del tipus " + color + ": </p>");
         printWriter.println("<br>");
         printWriter.println("<ul>");
